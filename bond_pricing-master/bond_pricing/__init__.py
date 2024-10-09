@@ -1,6 +1,6 @@
 from bond_pricing.simple_bonds import (  # noqa E401
     bond_price_breakup, bond_price, bond_duration,
-    bond_yield)
+    bond_yield, bond_coupon_periods)
 from bond_pricing.present_value import (  # noqa E401
     pvaf, fvaf, npv, irr, equiv_rate, duration, annuity_fv, annuity_pv,
     annuity_instalment, annuity_instalment_breakup, annuity_periods,
