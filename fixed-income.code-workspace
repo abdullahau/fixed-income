@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"AllAutocomplete.showCurrentDocument": true
+	}
 }
