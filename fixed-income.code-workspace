@@ -5,6 +5,14 @@
 		}
 	],
 	"settings": {
-		"AllAutocomplete.showCurrentDocument": true
+		"AllAutocomplete.showCurrentDocument": true,
+		"cSpell.words": [
+			"anncon",
+			"daycount",
+			"macdur",
+			"moddur",
+			"Nlist",
+			"pvaf"
+		]
 	}
 }
