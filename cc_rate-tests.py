@@ -158,10 +158,8 @@ def equiv_rate(rate, from_freq=1, to_freq=1):
     np.seterr(**old_settings)
     return res
 
+cf = [-20000,1000,1500,2100,2500,3000,3500,5000,6000]
+cf_t = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4]
+rate = 0.06
 
-if __name__ == "__main__":
-     cf = [-20000,1000,1500,2100,2500,3000,3500,5000,6000]
-     cf_t = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4]
-     rate = 0.06
-     
-     print(npv(cf=cf, rate=rate, cf_t=cf_t, cf_freq=2, comp_freq=2))
+print(npv(cf=cf, rate=rate, cf_t=cf_t, cf_freq=2, comp_freq=2))
