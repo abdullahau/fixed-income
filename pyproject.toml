@@ -1,0 +1,36 @@
+[project]
+name = "fixed-income"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "bond-pricing>=0.7.3",
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.0",
+    "numpy>=2.5.1",
+    "scipy>=1.18.0",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+ignore = [
+    "F401",  # unused imports
+    # "I",     # import sorting (all isort rules)
+    "N999",  # Invalid module name
+    "RUF002",  # En dash / hyphen ignore
+    "RUF003", # En dash / hyphen ignore
+    "PLR0917",  # Too many positional arguments
+    "PLR0913", # Too many arguments
+    "FBT001", # Boolean-typed positional argument
+    "FBT002", # Boolean default positional argument
+    "N806", # Variable in function to be lowercase
+    "N803", # Argument name should be lowercase
+    "DOC", # Documentation errors
+    "TC003", # imports that are only used for type annotations, but aren't defined in a type-checking block
+]
+
+[tool.pyrefly]
+python-interpreter-path = ".venv/bin/python3"
