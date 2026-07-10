@@ -32,5 +32,6 @@ ignore = [
     "TC003", # imports that are only used for type annotations, but aren't defined in a type-checking block
 ]
 
-[tool.pyrefly]
-python-interpreter-path = ".venv/bin/python3"
+[tool.ty.environment]
+python = ".venv/bin/python3"
+python-version = "3.14"
